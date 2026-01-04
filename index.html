@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Paper collected by Wang</title>
+<title>arXiv Papers of Object Tracking</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 
@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -41,9 +41,8 @@ span#abs{
 }
 </style>
 </head>
-<body>
-
-</p></br></br><div id='section'>Paperid: <span id='pid'>1, <a href='https://arxiv.org/pdf/2512.22799.pdf' target='_blank'>https://arxiv.org/pdf/2512.22799.pdf</a></span>   <span><a href='https://github.com/jcwang0602/VPTracker' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Jingchao Wang, Kaiwen Zhou, Zhijian Wu, Kunhua Ji, Dingjiang Huang, Yefeng Zheng
+<body><div id='title' style='font-size:1.3em; font-weight:bold;'>arXiv Papers of Object Tracking</div><br>
+<div id='section'>Paperid: <span id='pid'>1, <a href='https://arxiv.org/pdf/2512.22799.pdf' target='_blank'>https://arxiv.org/pdf/2512.22799.pdf</a></span>   <span><a href='https://github.com/jcwang0602/VPTracker' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Jingchao Wang, Kaiwen Zhou, Zhijian Wu, Kunhua Ji, Dingjiang Huang, Yefeng Zheng
 </span></div><div id="title">Title: <a href="https://arxiv.org/html/2512.22799">VPTracker: Global Vision-Language Tracking via Visual Prompt and MLLM</a></div></span></div><div id = 'abs'>Abstract:</br> <span id = 'abs'>Vision-Language Tracking aims to continuously localize objects described by a visual template and a language description. Existing methods, however, are typically limited to local search, making them prone to failures under viewpoint changes, occlusions, and rapid target movements. In this work, we introduce the first global tracking framework based on Multimodal Large Language Models (VPTracker), exploiting their powerful semantic reasoning to locate targets across the entire image space. While global search improves robustness and reduces drift, it also introduces distractions from visually or semantically similar objects. To address this, we propose a location-aware visual prompting mechanism that incorporates spatial priors into the MLLM. Specifically, we construct a region-level prompt based on the target's previous location, enabling the model to prioritize region-level recognition and resort to global inference only when necessary. This design retains the advantages of global tracking while effectively suppressing interference from distracting visual content. Extensive experiments show that our approach significantly enhances tracking stability and target disambiguation under challenging scenarios, opening a new avenue for integrating MLLMs into visual tracking. Code is available at https://github.com/jcwang0602/VPTracker.
 <div id='section'>Paperid: <span id='pid'>2, <a href='https://arxiv.org/pdf/2512.22624.pdf' target='_blank'>https://arxiv.org/pdf/2512.22624.pdf</a></span>   <span><a href='https://github.com/HamadYA/SAM3_Tracking_Zoo' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Mohamad Alansari, Muzammal Naseer, Hasan Al Marzouqi, Naoufel Werghi, Sajid Javed
 </span></div><div id="title">Title: <a href="https://arxiv.org/html/2512.22624">Rethinking Memory Design in SAM-Based Visual Object Tracking</a></div></span></div><div id = 'abs'>Abstract:</br> <span id = 'abs'>\noindent Memory has become the central mechanism enabling robust visual object tracking in modern segmentation-based frameworks. Recent methods built upon Segment Anything Model 2 (SAM2) have demonstrated strong performance by refining how past observations are stored and reused. However, existing approaches address memory limitations in a method-specific manner, leaving the broader design principles of memory in SAM-based tracking poorly understood. Moreover, it remains unclear how these memory mechanisms transfer to stronger, next-generation foundation models such as Segment Anything Model 3 (SAM3). In this work, we present a systematic memory-centric study of SAM-based visual object tracking. We first analyze representative SAM2-based trackers and show that most methods primarily differ in how short-term memory frames are selected, while sharing a common object-centric representation. Building on this insight, we faithfully reimplement these memory mechanisms within the SAM3 framework and conduct large-scale evaluations across ten diverse benchmarks, enabling a controlled analysis of memory design independent of backbone strength. Guided by our empirical findings, we propose a unified hybrid memory framework that explicitly decomposes memory into short-term appearance memory and long-term distractor-resolving memory. This decomposition enables the integration of existing memory policies in a modular and principled manner. Extensive experiments demonstrate that the proposed framework consistently improves robustness under long-term occlusion, complex motion, and distractor-heavy scenarios on both SAM2 and SAM3 backbones. Code is available at: https://github.com/HamadYA/SAM3_Tracking_Zoo. \textbf{This is a preprint. Some results are being finalized and may be updated in a future revision.}
